@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Er. Dhramveer Joshi — Sr. Solar Design Engineer (Resume)</title>
-  <meta name="description" content="Sr. Solar Design Engineer with 2+ years in MW‑scale PV design, grid compliance, and lithium battery R&D. One‑page, employer‑friendly resume with Google Drive download." />
+  <meta name="description" content="Sr. Solar Design Engineer with 2+ years in MW-scale PV design, grid compliance, and lithium battery R&D. One-page, employer-friendly resume with Google Drive download." />
   <meta name="theme-color" content="#07202b" />
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,9 +19,24 @@
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;color:var(--text)}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;color:var(--text);background:var(--bg)}
     a{color:var(--sky);text-decoration:none} a:hover{text-decoration:underline}
     .container{max-width:var(--max);margin:0 auto;padding:28px 20px}
+
+    /* ====== iPhone/Safari hardening ====== */
+    img, svg, canvas, video { max-width:100%; height:auto; }
+    .card, .hero-wrap { overflow:hidden; }
+    .card, .kv div { word-break:break-word; overflow-wrap:anywhere; }
+    .container {
+      padding-left:max(20px, env(safe-area-inset-left));
+      padding-right:max(20px, env(safe-area-inset-right));
+    }
+    header { -webkit-backdrop-filter:saturate(140%) blur(8px); backdrop-filter:saturate(140%) blur(8px); }
+    body { -webkit-text-size-adjust:100%; }
+    @supports not (backdrop-filter: blur(0)) {
+      body.theme-night .card,
+      body.theme-night .hero-wrap { background:rgba(17,24,39,0.92); }
+    }
 
     /* ====== THEME (A/B crossfade, independent of content) ====== */
     .theme-layer{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity 10s ease;will-change:opacity}
@@ -40,11 +55,11 @@
     body.theme-night{color:#ffffff}
     body.theme-night a{color:#8bd3ff}
     body.theme-night .muted{color:#bfc8d4}
-    body.theme-night .card, body.theme-night .hero-wrap{background:rgba(255,255,255,0.08);backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);border-color:rgba(255,255,255,0.18);box-shadow:0 10px 30px rgba(0,0,0,0.35)}
+    body.theme-night .card, body.theme-night .hero-wrap{background:rgba(255,255,255,0.08);-webkit-backdrop-filter:saturate(160%) blur(12px);backdrop-filter:saturate(160%) blur(12px);border-color:rgba(255,255,255,0.18);box-shadow:0 10px 30px rgba(0,0,0,0.35)}
     body.theme-night .title::after{background:linear-gradient(90deg,#5eead4,#60a5fa)}
 
     /* ====== Header ====== */
-    header{position:sticky;top:0;z-index:3;background:rgba(255,255,255,.96);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #e7eef0}
+    header{position:sticky;top:0;z-index:3;background:rgba(255,255,255,.96);border-bottom:1px solid #e7eef0}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
     .brand{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none}
     .brand img{width:42px;height:42px;border-radius:10px;object-fit:cover;border:2px solid rgba(240,184,75,.14)}
@@ -114,8 +129,8 @@
       <div class="hero-wrap">
         <div>
           <h1>Sr. Solar Design Engineer</h1>
-          <div class="subtitle">MW‑scale PV engineering • Grid compliance • Battery R&D</div>
-          <p class="muted">I design execution‑ready solar plant packages: SLDs, layouts, cable schedules, DBR & compliance files. Experience spans ground‑mounted projects across Rajasthan and hybrid documentation in Haryana, plus 1 year in lithium battery pack R&D (BMS, testing, validation).</p>
+          <div class="subtitle">MW-scale PV engineering • Grid compliance • Battery R&D</div>
+          <p class="muted">I design execution-ready solar plant packages: SLDs, layouts, cable schedules, DBR & compliance files. Experience spans ground-mounted projects across Rajasthan and hybrid documentation in Haryana, plus 1 year in lithium battery pack R&D (BMS, testing, validation).</p>
           <div>
             <span class="tag">AutoCAD</span>
             <span class="tag">PVsyst (Working Knowledge)</span>
@@ -146,51 +161,47 @@
     </section>
 
     <!-- PROFESSIONAL EXPERIENCE (Detailed) -->
-<section data-aos="fade-up">
-<h2 class="title">Professional Experience</h2>
+    <section data-aos="fade-up">
+      <h2 class="title">Professional Experience</h2>
 
+      <div class="card" style="margin-bottom:12px;">
+        <strong>Sr. Solar Design Engineer — Suntrik Green Energy Pvt. Ltd.</strong>
+        <div class="muted">Jul 2024 — Present | Sirsa / Haryana Projects</div>
+        <ul class="clean">
+          <li>Designing MW-scale Solar PV plants (3MW — 8.48MW) including detailed SLDs, cable sizing, trench layouts, and earthing/LPS systems.</li>
+          <li>Preparation of DBR (Design Basis Report), equipment datasheets, and BOQ/BOS optimization for cost-efficient design.</li>
+          <li>Developing AutoCAD execution drawings: module layout, routing plans, inverter station drawings, and string mapping.</li>
+          <li>Site support: QA/QC checks, inverter placement review, civil-electrical coordination, and solving execution-site design conflicts.</li>
+        </ul>
+      </div>
 
-<div class="card" style="margin-bottom:12px;">
-<strong>Sr. Solar Design Engineer — Suntrik Green Energy Pvt. Ltd.</strong>
-<div class="muted">Jul 2024 — Present | Sirsa / Haryana Projects</div>
-<ul class="clean">
-<li>Designing MW‑scale Solar PV plants (3MW — 8.48MW) including detailed SLDs, cable sizing, trench layouts, and earthing/LPS systems.</li>
-<li>Preparation of DBR (Design Basis Report), equipment datasheets, and BOQ/BOS optimization for cost‑efficient design.</li>
-<li>Developing AutoCAD execution drawings: module layout, routing plans, inverter station drawings, and string mapping.</li>
-<li>Site support: QA/QC checks, inverter placement review, civil‑electrical coordination, and solving execution‑site design conflicts.</li>
-</ul>
-</div>
-
-
-<div class="card" style="margin-bottom:12px;">
-<strong>R&D Engineer — Litpax Technology Pvt. Ltd.</strong>
-<div class="muted">Jul 2023 — Jun 2024 | Sirsa, Haryana</div>
-<ul class="clean">
-<li>Worked on Lithium battery pack R&D (EV & Solar Storage) including battery cell testing, balancing, and pack assembly.</li>
-<li>Assisted in BMS testing, PCB debugging, and validation of protection circuitry.</li>
-<li>Created process SOPs, QA documentation, and test logs for battery performance & safety certification.</li>
-<li>Contributed to prototype pack development, battery welding & insulation process improvement.</li>
-</ul>
-</div>
-
-
-</section>
+      <div class="card" style="margin-bottom:12px;">
+        <strong>R&D Engineer — Litpax Technology Pvt. Ltd.</strong>
+        <div class="muted">Jul 2023 — Jun 2024 | Sirsa, Haryana</div>
+        <ul class="clean">
+          <li>Worked on Lithium battery pack R&D (EV & Solar Storage) including battery cell testing, balancing, and pack assembly.</li>
+          <li>Assisted in BMS testing, PCB debugging, and validation of protection circuitry.</li>
+          <li>Created process SOPs, QA documentation, and test logs for battery performance & safety certification.</li>
+          <li>Contributed to prototype pack development, battery welding & insulation process improvement.</li>
+        </ul>
+      </div>
+    </section>
 
     <!-- MAJOR PROJECTS (SUNTRIK) -->
     <section data-aos="fade-up">
       <h2 class="title">Major Solar Projects — SUNTRIK</h2>
       <div class="grid-2">
-        <div class="card"><strong>Ransisar, Rajasthan — 8.48 MWp</strong><div class="muted">Ground‑mounted</div><ul class="clean"><li>Full documentation: layout, stringing, cable routing, BOM & DBR.</li></ul></div>
-        <div class="card"><strong>Rampura Matoria, Rajasthan — 6.56 MWp</strong><div class="muted">Ground‑mounted</div><ul class="clean"><li>DC/AC cable schematics, inverter selection, civil coordination.</li></ul></div>
-        <div class="card"><strong>Malsar, Rajasthan — 8.48 MWp</strong><div class="muted">Ground‑mounted</div><ul class="clean"><li>Trench & earthing layout, structure positioning, yield simulation.</li></ul></div>
-        <div class="card"><strong>Fatehgarh, Rajasthan — 3.28 MWp</strong><div class="muted">Ground‑mounted</div><ul class="clean"><li>MW‑level EPC docs, stringing, SLD, technical coordination with EPC.</li></ul></div>
-        <div class="card"><strong>Bhojasar, Rajasthan — 8.48 MWp</strong><div class="muted">Ground‑mounted</div><ul class="clean"><li>Optimized land layout for higher yield with lower BOS cost.</li></ul></div>
-        <div class="card"><strong>Girghichiya, Rajasthan — 3.89 MWp</strong><div class="muted">Ground‑mounted</div><ul class="clean"><li>AutoCAD SLDs, DBR reports, and grid‑compliance design package.</li></ul></div>
-        <div class="card"><strong>Norangdesar, Rajasthan — 3.28 MWp</strong><div class="muted">Ground‑mounted</div><ul class="clean"><li>Civil & electrical design support: foundation + earthing drawings.</li></ul></div>
-        <div class="card"><strong>Tolasar, Rajasthan — 8.48 MWp</strong><div class="muted">Ground‑mounted</div><ul class="clean"><li>Detailed PV layout & tracker‑alignment optimization.</li></ul></div>
-        <div class="card"><strong>Billyubas, Rajasthan — 5.2 MWp</strong><div class="muted">Ground‑mounted</div><ul class="clean"><li>Energy yield estimation and trench coordination.</li></ul></div>
-        <div class="card"><strong>Nainasar Sumeriya, Rajasthan — 3.28 MWp</strong><div class="muted">Ground‑mounted</div><ul class="clean"><li>Layout, BOM optimization, MNRE‑compliant documentation.</li></ul></div>
-        <div class="card"><strong>Phaggu Kalanwali, Haryana — 2.6 MWp</strong><div class="muted">Ground‑mounted (Hybrid)</div><ul class="clean"><li>Hybrid solar documentation incl. protection coordination & SLD.</li></ul></div>
+        <div class="card"><strong>Ransisar, Rajasthan — 8.48 MWp</strong><div class="muted">Ground-mounted</div><ul class="clean"><li>Full documentation: layout, stringing, cable routing, BOM & DBR.</li></ul></div>
+        <div class="card"><strong>Rampura Matoria, Rajasthan — 6.56 MWp</strong><div class="muted">Ground-mounted</div><ul class="clean"><li>DC/AC cable schematics, inverter selection, civil coordination.</li></ul></div>
+        <div class="card"><strong>Malsar, Rajasthan — 8.48 MWp</strong><div class="muted">Ground-mounted</div><ul class="clean"><li>Trench & earthing layout, structure positioning, yield simulation.</li></ul></div>
+        <div class="card"><strong>Fatehgarh, Rajasthan — 3.28 MWp</strong><div class="muted">Ground-mounted</div><ul class="clean"><li>MW-level EPC docs, stringing, SLD, technical coordination with EPC.</li></ul></div>
+        <div class="card"><strong>Bhojasar, Rajasthan — 8.48 MWp</strong><div class="muted">Ground-mounted</div><ul class="clean"><li>Optimized land layout for higher yield with lower BOS cost.</li></ul></div>
+        <div class="card"><strong>Girghichiya, Rajasthan — 3.89 MWp</strong><div class="muted">Ground-mounted</div><ul class="clean"><li>AutoCAD SLDs, DBR reports, and grid-compliance design package.</li></ul></div>
+        <div class="card"><strong>Norangdesar, Rajasthan — 3.28 MWp</strong><div class="muted">Ground-mounted</div><ul class="clean"><li>Civil & electrical design support: foundation + earthing drawings.</li></ul></div>
+        <div class="card"><strong>Tolasar, Rajasthan — 8.48 MWp</strong><div class="muted">Ground-mounted</div><ul class="clean"><li>Detailed PV layout & tracker-alignment optimization.</li></ul></div>
+        <div class="card"><strong>Billyubas, Rajasthan — 5.2 MWp</strong><div class="muted">Ground-mounted</div><ul class="clean"><li>Energy yield estimation and trench coordination.</li></ul></div>
+        <div class="card"><strong>Nainasar Sumeriya, Rajasthan — 3.28 MWp</strong><div class="muted">Ground-mounted</div><ul class="clean"><li>Layout, BOM optimization, MNRE-compliant documentation.</li></ul></div>
+        <div class="card"><strong>Phaggu Kalanwali, Haryana — 2.6 MWp</strong><div class="muted">Ground-mounted (Hybrid)</div><ul class="clean"><li>Hybrid solar documentation incl. protection coordination & SLD.</li></ul></div>
       </div>
     </section>
 
@@ -233,9 +244,8 @@
   </main>
 
   <footer>
-   © 2025 • Resume Website crafted by <h3>Er. Dhramveer Joshi </h3>Sr. Solar Design Engineer
+    © 2025 • Resume Website crafted by <h3>Er. Dhramveer Joshi </h3>Sr. Solar Design Engineer
   </footer>
-
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>try{AOS&&AOS.init({duration:650,easing:'ease-out-cubic'})}catch(e){}</script>
@@ -261,11 +271,31 @@
     function draw(){
       x.clearRect(0,0,W,H);
       // stars
-      for(const s of stars){ if(touch.active){const dx=s.x-touch.x,dy=s.y-touch.y, R=120; const d2=dx*dx+dy*dy; if(d2<R*R){const d=Math.max(10,Math.sqrt(d2)); const f=(R/d-1)*1.3; s.vx+=(dx/d)*f; s.vy+=(dy/d)*f;}} s.x+=s.vx; s.y+=s.vy; s.vx*=.996; s.vy*=.996; if(s.x<0)s.x=W; if(s.x>W)s.x=0; if(s.y<0)s.y=H; if(s.y>H)s.y=0; x.beginPath(); x.arc(s.x,s.y,s.r,0,Math.PI*2); x.fillStyle='rgba(255,255,255,0.9)'; x.shadowColor='white'; x.shadowBlur=4; x.fill(); }
+      for(const s of stars){
+        if(touch.active){const dx=s.x-touch.x,dy=s.y-touch.y, R=120; const d2=dx*dx+dy*dy; if(d2<R*R){const d=Math.max(10,Math.sqrt(d2)); const f=(R/d-1)*1.3; s.vx+=(dx/d)*f; s.vy+=(dy/d)*f;}}
+        s.x+=s.vx; s.y+=s.vy; s.vx*=.996; s.vy*=.996;
+        if(s.x<0)s.x=W; if(s.x>W)s.x=0; if(s.y<0)s.y=H; if(s.y>H)s.y=0;
+        x.beginPath(); x.arc(s.x,s.y,s.r,0,Math.PI*2); x.fillStyle='rgba(255,255,255,0.9)'; x.shadowColor='white'; x.shadowBlur=4; x.fill();
+      }
       // meteors
-      for(let i=meteors.length-1;i>=0;i--){ const m=meteors[i]; m.life++; m.x+=m.vx; m.y+=m.vy; const g=x.createLinearGradient(m.x,m.y,m.x-m.vx*m.len*.1,m.y-m.vy*m.len*.1); g.addColorStop(0,'rgba(255,255,255,0.9)'); g.addColorStop(1,'rgba(255,255,255,0)'); x.strokeStyle=g; x.lineWidth=2; x.beginPath(); x.moveTo(m.x,m.y); x.lineTo(m.x-m.vx*m.len*.1,m.y-m.vy*m.len*.1); x.stroke(); x.beginPath(); x.arc(m.x,m.y,2.2,0,Math.PI*2); x.fillStyle='#fff'; x.fill(); if(m.life>m.maxLife||m.x<-200||m.x>W+200||m.y<-200||m.y>H+200) meteors.splice(i,1); }
+      for(let i=meteors.length-1;i>=0;i--){
+        const m=meteors[i]; m.life++; m.x+=m.vx; m.y+=m.vy;
+        const g=x.createLinearGradient(m.x,m.y,m.x-m.vx*m.len*.1,m.y-m.vy*m.len*.1);
+        g.addColorStop(0,'rgba(255,255,255,0.9)'); g.addColorStop(1,'rgba(255,255,255,0)');
+        x.strokeStyle=g; x.lineWidth=2; x.beginPath(); x.moveTo(m.x,m.y); x.lineTo(m.x-m.vx*m.len*.1,m.y-m.vy*m.len*.1); x.stroke();
+        x.beginPath(); x.arc(m.x,m.y,2.2,0,Math.PI*2); x.fillStyle='#fff'; x.fill();
+        if(m.life>m.maxLife||m.x<-200||m.x>W+200||m.y<-200||m.y>H+200) meteors.splice(i,1);
+      }
       // sats
-      for(let i=0;i<sats.length;i++){ const s=sats[i]; s.x+=s.vx; s.blink=(s.blink+1)%60; x.save(); x.translate(s.x,s.y); x.rotate(0.05); x.fillStyle='rgba(255,255,255,0.85)'; x.fillRect(-s.size,-s.size*0.4,s.size*2,s.size*0.8); x.fillStyle='rgba(120,180,255,0.85)'; x.fillRect(-s.size*2.2,-s.size*0.25,s.size*1.6,s.size*0.5); x.fillRect(s.size*0.6,-s.size*0.25,s.size*1.6,s.size*0.5); if(s.blink<12){ x.fillStyle='#ff6262'; x.beginPath(); x.arc(0,-s.size*0.6,s.size*0.25,0,Math.PI*2); x.fill(); } x.restore(); if(s.x<-60||s.x>W+60) sats[i]=newSat(); }
+      for(let i=0;i<sats.length;i++){
+        const s=sats[i]; s.x+=s.vx; s.blink=(s.blink+1)%60;
+        x.save(); x.translate(s.x,s.y); x.rotate(0.05);
+        x.fillStyle='rgba(255,255,255,0.85)'; x.fillRect(-s.size,-s.size*0.4,s.size*2,s.size*0.8);
+        x.fillStyle='rgba(120,180,255,0.85)'; x.fillRect(-s.size*2.2,-s.size*0.25,s.size*1.6,s.size*0.5); x.fillRect(s.size*0.6,-s.size*0.25,s.size*1.6,s.size*0.5);
+        if(s.blink<12){ x.fillStyle='#ff6262'; x.beginPath(); x.arc(0,-s.size*0.6,s.size*0.25,0,Math.PI*2); x.fill(); }
+        x.restore();
+        if(s.x<-60||s.x>W+60) sats[i]=newSat();
+      }
       requestAnimationFrame(draw);
     }
     draw();
@@ -280,10 +310,12 @@
     setInterval(cycle, 10000);
   })();
   </script>
-  <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919992553859?text=Hi%20!%20*Dhramveer%20Joshi*"
-   aria-label="Chat on WhatsApp"
-   style="
+
+  <!-- WhatsApp Floating Button (Safari/iPhone safe) -->
+  <a
+    href="https://api.whatsapp.com/send?phone=919992553859&text=Hi%20%2ADhramveer%20Joshi%2A"
+    aria-label="Chat on WhatsApp"
+    style="
       position:fixed;
       right:18px;
       bottom:18px;
@@ -297,17 +329,14 @@
       background:linear-gradient(90deg,#25D366,#128C7E);
       color:#fff;
       box-shadow:0 12px 36px rgba(10,30,30,.12);
-   "
-   target="_blank"
-   rel="noopener"
->
-  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-       viewBox="0 0 24 24" width="26" height="26">
-    <path d="M20.52 3.48A11.82 11.82 0 0 0 12 .6a11.82 11.82 0 0 0-8.52 3.48A11.82 11.82 0 0 0 0 12c0 2.09.54 4.15 1.57 5.96L0 24l6.2-1.63A11.82 11.82 0 0 0 12 23.4a11.82 11.82 0 0 0 8.52-3.48A11.82 11.82 0 0 0 24 12a11.82 11.82 0 0 0-3.48-8.52ZM12 21.3a9.32 9.32 0 0 1-4.73-1.27l-.34-.19-3.67.96.98-3.58-.22-.37a9.28 9.28 0 0 1-1.4-4.84 9.3 9.3 0 0 1 18.6 0A9.3 9.3 0 0 1 12 21.3Zm5.25-7.03c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.3-.74.94-.91 1.13-.17.19-.34.21-.63.07-.29-.15-1.23-.45-2.35-1.43-.87-.78-1.46-1.73-1.63-2.02-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.3.29-.5.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.48h-.54c-.18 0-.47.07-.72.36-.26.3-.96.94-.96 2.29s.99 2.65 1.13 2.83c.15.19 1.95 2.98 4.73 4.17.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/>
-  </svg>
-</a>
-
+    "
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+      <path d="M20.52 3.48A11.82 11.82 0 0 0 12 .6a11.82 11.82 0 0 0-8.52 3.48A11.82 11.82 0 0 0 0 12c0 2.09.54 4.15 1.57 5.96L0 24l6.2-1.63A11.82 11.82 0 0 0 12 23.4a11.82 11.82 0 0 0 8.52-3.48A11.82 11.82 0 0 0 24 12a11.82 11.82 0 0 0-3.48-8.52ZM12 21.3a9.32 9.32 0 0 1-4.73-1.27l-.34-.19-3.67.96.98-3.58-.22-.37a9.28 9.28 0 0 1-1.4-4.84 9.3 9.3 0 0 1 18.6 0A9.3 9.3 0 0 1 12 21.3Zm5.25-7.03c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.3-.74.94-.91 1.13-.17.19-.34.21-.63.07-.29-.15-1.23-.45-2.35-1.43-.87-.78-1.46-1.73-1.63-2.02-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.3.29-.5.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.48h-.54c-.18 0-.47.07-.72.36-.26.3-.96.94-.96 2.29s.99 2.65 1.13 2.83c.15.19 1.95 2.98 4.73 4.17.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/>
+    </svg>
+  </a>
 
 </body>
 </html>
-
