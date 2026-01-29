@@ -86,7 +86,7 @@
     .title::after{content:"";position:absolute;left:0;bottom:-6px;width:64px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--gold))}
     .card{background:var(--card);border:1px solid #e8eff1;border-radius:12px;padding:14px}
     .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    .kv{display:grid;grid-template-columns:160px 1fr;gap:8px}
+    .kv{display:grid;grid-template-columns:110px 1fr;gap:8px}
     .kv div{padding:4px 0}
     .muted{color:var(--muted)}
     ul.clean{margin:8px 0 0 18px}
@@ -315,7 +315,7 @@
     const grads=['grad-day','grad-evening','grad-night']; const nightIdx=2; let current=0, theme=0;
     function applyNight(e){ e?body.classList.add('theme-night') : body.classList.remove('theme-night'); }
     function cycle(){ const n=(theme+1)%grads.length; const show=layers[1-current], hide=layers[current]; show.className='theme-layer '+grads[n]; requestAnimationFrame(()=>{ show.classList.add('show'); hide.classList.remove('show'); }); setTimeout(()=>applyNight(n===nightIdx),5000); setTimeout(()=>{ current=1-current; theme=n; },10050); }
-    setInterval(cycle, 10000);
+    setInterval(cycle, 15000);
   })();
   </script>
 
@@ -347,5 +347,6 @@
 
 </body>
 </html>
+
 
 
